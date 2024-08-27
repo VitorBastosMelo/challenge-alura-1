@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="estilos/estilo.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <section class="grupo1">
+          <div class="logo">
+            <img class="logo__alura" src="/assets/Alura Challenge - Desafio 1 - Lógica (Copy)/Vector@3x.png" alt="Logo da alura"/>
+          </div>
+          <textarea id="input"
+            class="area__texto"
+            placeholder="Digite seu texto"
+          ></textarea>
+            <section class="grupo__aviso__botoes">
+                <div class="aviso">
+                    <img class="aviso__exclamacao" src="assets/exclamacao/Vector@3x.png" alt="!"/>
+                    <p class="aviso__texto">Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="botoes">
+                    <button class="botao__criptografar" onclick="botaoCriptografar()">Criptografar</button>
+                    <button class="botao__descriptografar" onclick="botaoDescriptografar()">Descriptografar</button>
+                </div>
+            </section>
+        </section>
+        <section class="grupo2">
+          <img class="boneco" src="./assets/High quality products 1 1.png" alt="boneco olhando através de uma lupa">
+          <p class="mensagem" id="mensagem"></p>
+          <div class="nenhuma__mensagem">
+            <h1 class="nenhuma__mensagem__1">Nenhuma mensagem encontrada</h1>
+            <p class="nenhuma__mensagem__2" onclick="">
+              Digite um texto que você deseja criptografar ou descriptografar.
+            </p>
+          </div>
+          <button class="botao__copiar" onclick="botaoCopiar()">Copiar</button>
+        </section>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
